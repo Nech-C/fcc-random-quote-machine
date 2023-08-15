@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to the CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body class="changing-bg-color"> 
+    <div id="quote-box">
+        <!-- Quote and author elements here -->
+        <div id="quote-main" class="changing-color">
+            <i id="left-quote" class="fa fa-quote-left changeing-color"></i>
+            <div id="text"></div>
+            <i id="right-quote" class="fa fa-quote-right changeing-color"></i>
+            <div id="author"></div>
+        </div> 
+
+        <div id="divider" class="changing-bg-color"></div>
+
+        <div id="buttons">
+
+            <div id="links" >
+                <a id="tweet-quote" class="changing-color" href="https://twitter.com/intent/tweet" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a id="tumblr-quote" class="changing-color" href="https://www.tumblr.com/widgets/share/tool" target="_blank"><i class="fa-brands fa-square-tumblr"></i></a>
+                <a id="fb-quote" class="changing-color" href="https://www.facebook.com/sharer/sharer.php" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            
+            <button id="new-quote" class="changing-bg-color">Next Quote</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script> <!-- Linking to the JavaScript file -->
+
+</body>
+</html>

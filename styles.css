@@ -1,0 +1,122 @@
+/* universal */
+:root {
+    --quote-text-font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+a, button {
+    transition: filter 0.3s; /* Smooth transition */
+}
+  
+a:hover, button:hover {
+    filter: brightness(111%); /* Apply greyish filter */
+}
+
+.changing-color {
+    color: lightsalmon;
+}
+
+.changing-bg-color {
+    background-color: lightsalmon;
+}
+
+
+
+/* body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    font-family: Roboto, sans-serif;
+}
+
+/* quote box and children */
+#quote-box {
+    width: 620px;
+    border-radius: 8px;
+    background-color: ghostwhite;
+    overflow: hidden;
+    padding: 30px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#quote-main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-quote {
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+#right-quote {
+    align-self: flex-end;
+    font-weight: 600;
+}
+ 
+
+#text {
+    width: 70%;
+    text-align: center;
+    word-wrap: break-word;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#author {
+    margin-top: 20px;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+#text, #author {
+    opacity: 1;
+}
+
+/* divider */
+#divider {
+    margin-top: 15px;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+}
+
+
+/* button */
+#buttons {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    color: ghostwhite;
+}
+
+#links {
+    font-size: 32px;
+    
+}
+
+#links a {
+    color:lightsalmon;
+}
+
+#new-quote {
+    font-size: 15px;
+    width: 89px;
+    height: 36px;
+    color: ghostwhite;
+    border: none;
+    border-radius: 8px;
+}
