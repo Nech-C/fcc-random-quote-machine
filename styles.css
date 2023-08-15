@@ -16,7 +16,7 @@ a, button {
 }
   
 a:hover, button:hover {
-    filter: brightness(111%); /* Apply greyish filter */
+    filter: brightness(137%); /* Apply greyish filter */
 }
 
 .changing-color {
@@ -43,7 +43,7 @@ body {
 #quote-box {
     width: 620px;
     border-radius: 8px;
-    background-color: ghostwhite;
+    background-color: #f8f8ff;
     overflow: hidden;
     padding: 30px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -119,4 +119,5 @@ body {
     color: ghostwhite;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
