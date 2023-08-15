@@ -17,24 +17,33 @@ const quotes = [
   ];
   
   const colors = [
-    "#000080", // Dark Blue
-    "#006400", // Dark Green
-    "#8B0000", // Dark Red
-    "#800080", // Dark Purple
-    "#008080", // Dark Teal
-    "#333333", // Charcoal
-    "#191970", // Midnight Blue
-    "#800000", // Maroon
-    "#556B2F", // Dark Olive Green
-    "#2F4F4F"  // Dark Slate Gray
+    "#A52A2A",
+    "#4682B4",
+    "#3CB371",
+    "#008B8B",
+    "#FF6347",
+    "#6A5ACD",
+    "#191970", 
+    "#556B2F", 
+    "#2F4F4F",
+    '#16a085',
+    '#27ae60',
+    '#2c3e50',
+    '#f39c12',
+    '#e74c3c',
+    '#9b59b6',
+    '#FB6964',
+    '#342224',
+    '#472E32',
+    '#BDBB99',
+    '#77B1A9',
+    '#73A857'  
   ];
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-  $(".changing-bg-color").css("background-color", randomColor);
-  $(".changing-color").css("color", randomColor);
 
 
-  $("#new-quote").click(function() {
+
+
+function changeQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     $("#text").animate(
@@ -80,10 +89,16 @@ const quotes = [
     $('#tumblr-quote').attr('href', tumblrURL);
     $('#fb-quote').attr('href', facebookURL);
 
-
-    // $(".changing-bg-color").css("background-color", randomColor);
-    // $(".changing-color").css("color", randomColor);
-
     
+  }
+
+
+  $(window).on('load', function() {
+    changeQuote();
   });
+
+$(document).ready(function() {
+    $("#new-quote").click(changeQuote);
+});
+
   
